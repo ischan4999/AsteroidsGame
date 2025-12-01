@@ -46,8 +46,17 @@ class Asteroid extends Floater
     myYspeed = (int)(Math.random()*5); 
     myPointDirection = 0; //holds current direction the ship is pointing in degrees    
   }
+  
   public void move(){
     super.move();
     myPointDirection += rotationSpeed; 
+  }
+  
+  public double getX(){
+    return myCenterX;
+  }
+  
+  public double getY(){
+    return myCenterY;
   }
 }
