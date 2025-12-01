@@ -28,6 +28,14 @@ class Spaceship extends Floater
     myYspeed = y;
   }
   
+  public double getX(){
+    return myCenterX;
+  }
+  
+  public double getY(){
+    return myCenterY;
+  }
+  
   public void hyperspace(){
     myCenterX = Math.random()*500;
     myCenterY = Math.random()*500;
